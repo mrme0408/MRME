@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MR LEON — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="brand">MR LEON OFFICIAL</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="controls">
+      <button id="themeToggleDash" class="btn btn-ghost">Light</button>
+      <button id="logout" class="btn btn-danger">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Your Dashboard</h2>
+      <div id="profile" class="card-inline">
+        <p><b id="p_name">—</b></p>
+        <p id="p_email">—</p>
+        <p id="p_user">—</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Payments & Subscriptions</h3>
+      <div id="plans">
+        <button class="btn" onclick="startPaymentSample(20000,'Basic')">Buy Basic — ₹200</button>
+        <button class="btn" onclick="startPaymentSample(120000,'Pro')">Buy Pro — ₹1200</button>
+      </div>
+      <div id="txnList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

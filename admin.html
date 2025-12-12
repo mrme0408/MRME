@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MR LEON — Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="brand">MR LEON Admin</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <div class="controls">
+      <button onclick="logout()" class="btn btn-danger">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Admin Panel (Protected)</h2>
+      <p>This panel is protected. In production, authenticate admins via Firebase Auth or other backend.</p>
+      <div id="adminContent"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
